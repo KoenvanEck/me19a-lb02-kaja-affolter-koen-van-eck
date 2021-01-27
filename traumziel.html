@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Traumziel</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destination.html">Top Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ueberuns.html">Über Uns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="preis.html">Preis Berechnen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="traumziel.html">Traumziel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="titel">Traumziel</h1>
+        <h2 class="untertitel">Eigenschaften zu den Top Destinations</h2>
+
+        <div style="margin-bottom: 3rem"></div>
+        <!-- Output Reiseort und Kontakt -->
+        <div class="row">
+            <div class="col-sm">
+                <div class="card-liste">
+                    <div class="card-header">Reiseort</div>
+                    <ul class="list-group list-group-flush">
+                        <li id="reiseort" class="list-group-item">?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card-liste">
+                    <div class="card-header">Infos</div>
+                    <ul class="list-group list-group-flush">
+                        <li id="infos" class="list-group-item">?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="margin-bottom: 1.5rem"></div>
+
+        <!-- Output Eigenschaften -->
+        <div class="row">
+            <div class="col-sm">
+                <div class="card-liste">
+                    <div class="card-header">Adresse</div>
+                    <ul class="list-group list-group-flush">
+                        <li id="adresse" class="list-group-item"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card-liste">
+                    <div class="card-header">Facilities</div>
+                    <ul class="list-group list-group-flush">
+                        <li id="facilities" class="list-group-item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 2rem"></div>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+            <ul id="pagination" class="pagination">
+                <li class="page-item">
+                    <a class="btn btn-primary" onclick="showPrevious()" href="#">
+                        <</a> </li> <li class="page-item">
+                            <p class="btn btn-primary" id="showIndex"></p>
+                </li>
+                <li class="page-item">
+                    <div id="moreBtnContainer">
+                        <a class="btn btn-primary" id="page-link" onclick="showNext()" href="#">></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <footer class="footer">
+        <p>Kaja Affolter - Koen van Eck</p>
+        <p>Portfolio</p>
+    </footer>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

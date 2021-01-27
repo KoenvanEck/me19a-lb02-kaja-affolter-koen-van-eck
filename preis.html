@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Preis</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Script für Taschenrechner -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destination.html">Top Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ueberuns.html">Über Uns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="preis.html">Preis Berechnen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="traumziel.html">Traumziel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hintergrund">
+            <h1 class="titel">Preis Berechnen</h1>
+            <h2 class="untertitel">Berechnen Sie den Preis Ihres Traumziels</h2>
+
+            <div class="main-taschenrechner">
+                <form name="form" class="taschenrechner">
+                    <input class="textview" name="textview">
+                </form>
+                <table class="tabletaschenrechner">
+                    <tr>
+                        <td><input class="btn" type="button" value="C" onclick="clean()"></td>
+                        <td><input class="btn" type="button" value="<" onclick="back()"></td>
+                        <td><input class="btn" type="button" value="/" onclick="insert('/')"></td>
+                        <td><input class="btn" type="button" value="X" onclick="insert('*')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="7" onclick="insert(7)"></td>
+                        <td><input class="btn" type="button" value="8" onclick="insert(8)"></td>
+                        <td><input class="btn" type="button" value="9" onclick="insert(9)"></td>
+                        <td><input class="btn" type="button" value="-" onclick="insert('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="4" onclick="insert(4)"></td>
+                        <td><input class="btn" type="button" value="5" onclick="insert(5)"></td>
+                        <td><input class="btn" type="button" value="6" onclick="insert(6)"></td>
+                        <td><input class="btn" type="button" value="+" onclick="insert('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="1" onclick="insert(1)"></td>
+                        <td><input class="btn" type="button" value="2" onclick="insert(2)"></td>
+                        <td><input class="btn" type="button" value="3" onclick="insert(3)"></td>
+                        <td rowspan=5><input class="btn" style="height: 8em;" type="button" value="=" onclick="equal()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2><input class="btn" style="width: 12.75em;" type="button" value="0"
+                                onclick="insert(0)"></td>
+                        <td><input class="btn" type="button" value="." onclick="insert('.')"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <p>Kaja Affolter - Koen van Eck</p>
+        <p>Portfolio</p>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+</body>
+
+</html>
